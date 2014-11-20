@@ -86,7 +86,7 @@ float fun(double x, int fun_nr){
 //plotting funktions
 double x_mat(int x_s){
     double x_m;
-    float x = x_s;
+    double x = x_s;
     x_m=(LEFT+(x*(RIGHT-LEFT))/X_MAX);
     return x_m;
 }
@@ -97,7 +97,6 @@ double y_mat(int y_s){
 }
 
 int plotfun(int x_s, int y_s, int fun_nr){
-    
     if (x_mat(x_s)==0){
         printf("|");
     }
